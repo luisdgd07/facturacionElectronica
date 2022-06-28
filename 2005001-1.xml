@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rDE xmlns="http://ekuatia.set.gov.py/sifen/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd siRecepDE_v150.xsd">
+  <dVerFor>150</dVerFor>
+  <DE Id="01800695631001001000000122020091410002983981">
+    <dDVId>1</dDVId>
+    <dFecFirma>2022-06-27T21:53:18</dFecFirma>
+    <dSisFact>1</dSisFact>
+    <gOpeDE>
+      <iTipEmi>1</iTipEmi>
+      <dDesTipEmi>Normal</dDesTipEmi>
+      <dCodSeg>000298398</dCodSeg>
+      <dInfoEmi>Cualquier informacion de marketing, publicidad, sorteos, promociones para el Receptor</dInfoEmi>
+      <dInfoFisc>Aparece en el documento</dInfoFisc>
+    </gOpeDE>
+    <gTimb>
+      <iTiDE>1</iTiDE>
+      <dDesTiDE>Factura electrónica</dDesTiDE>
+      <dNumTim>12558946</dNumTim>
+      <dEst>001</dEst>
+      <dPunExp>001</dPunExp>
+      <dNumDoc>0000001</dNumDoc>
+      <dFeIniT>2021-08-25</dFeIniT>
+    </gTimb>
+    <gDatGralOpe>
+      <dFeEmiDE>2020-09-14T10:11:00</dFeEmiDE>
+      <gOpeCom>
+        <iTipTra>1</iTipTra>
+        <dDesTipTra>Venta de mercadería</dDesTipTra>
+        <iTImp>1</iTImp>
+        <dDesTImp>IVA</dDesTImp>
+        <cMoneOpe>PYG</cMoneOpe>
+        <dDesMoneOpe>Guarani</dDesMoneOpe>
+        <iCondAnt>1</iCondAnt>
+        <dDesCondAnt>Anticipo Global</dDesCondAnt>
+      </gOpeCom>
+      <gEmis>
+        <dRucEm>80069563</dRucEm>
+        <dDVEmi>1</dDVEmi>
+        <iTipCont>2</iTipCont>
+        <cTipReg>8</cTipReg>
+        <dNomEmi>DE generado en ambiente de prueba - sin valor comercial ni fiscal</dNomEmi>
+        <dNomFanEmi>TIPS S.A. TECNOLOGIA Y SERVICIOS</dNomFanEmi>
+        <dDirEmi>Barrio Carolina</dDirEmi>
+        <dNumCas>0</dNumCas>
+        <dCompDir1>Entre calle 2</dCompDir1>
+        <dCompDir2>y Calle 7</dCompDir2>
+        <cDepEmi>11</cDepEmi>
+        <dDesDepEmi>ALTO PARANA</dDesDepEmi>
+        <cDisEmi>145</cDisEmi>
+        <dDesDisEmi>CIUDAD DEL ESTE</dDesDisEmi>
+        <cCiuEmi>3432</cCiuEmi>
+        <dDesCiuEmi>PUERTO PTE.STROESSNER (MUNIC)</dDesCiuEmi>
+        <dTelEmi>0973-527155</dTelEmi>
+        <dEmailE>tips@tips.com.py</dEmailE>
+        <dDenSuc>Sucursal 1</dDenSuc>
+        <gActEco>
+          <cActEco>1254</cActEco>
+          <dDesActEco>Desarrollo de Software</dDesActEco>
+        </gActEco>
+        <gRespDE>
+          <iTipIDRespDE>1</iTipIDRespDE>
+          <dDTipIDRespDE>Cédula paraguaya</dDTipIDRespDE>
+          <dNumIDRespDE>157264</dNumIDRespDE>
+          <dNomRespDE>Marcos Jara</dNomRespDE>
+          <dCarRespDE>Vendedor</dCarRespDE>
+        </gRespDE>
+      </gEmis>
+      <gDatRec>
+        <iNatRec>1</iNatRec>
+        <iTiOpe>1</iTiOpe>
+        <cPaisRec>PRY</cPaisRec>
+        <dDesPaisRe>Paraguay</dDesPaisRe>
+        <iTiContRec>1</iTiContRec>
+        <dRucRec>2005001</dRucRec>
+        <dDVRec>1</dDVRec>
+        <dNomRec>Marcos Adrian Jara Rodriguez</dNomRec>
+        <dNomFanRec>Marcos Adrian Jara Rodriguez</dNomFanRec>
+        <dDirRec>Avda Calle Segunda y Proyectada</dDirRec>
+        <dNumCasRec>1515</dNumCasRec>
+        <cDepRec>11</cDepRec>
+        <dDesDepRec>ALTO PARANA</dDesDepRec>
+        <cDisRec>143</cDisRec>
+        <dDesDisRec>DOMINGO MARTINEZ DE IRALA</dDesDisRec>
+        <cCiuRec>3344</cCiuRec>
+        <dDesCiuRec>PASO ITA (INDIGENA)</dDesCiuRec>
+        <dTelRec>061-575903</dTelRec>
+        <dCelRec>0973-809103</dCelRec>
+        <dEmailRec>cliente@cliente.com</dEmailRec>
+        <dCodCliente>1548</dCodCliente>
+      </gDatRec>
+    </gDatGralOpe>
+    <gDtipDE>
+      <gCamFE>
+        <iIndPres>1</iIndPres>
+        <dDesIndPres>Operación presencial</dDesIndPres>
+        <dFecEmNR>2021-10-21</dFecEmNR>
+      </gCamFE>
+      <gCamCond>
+        <iCondOpe>1</iCondOpe>
+        <dDCondOpe>Contado</dDCondOpe>
+        <gPaConEIni>
+          <iTiPago>1</iTiPago>
+          <dDesTiPag>Efectivo</dDesTiPag>
+          <dMonTiPag>150000</dMonTiPag>
+          <cMoneTiPag>PYG</cMoneTiPag>
+          <dDMoneTiPag>Guarani</dDMoneTiPag>
+        </gPaConEIni>
+        <gPaConEIni>
+          <iTiPago>3</iTiPago>
+          <dDesTiPag>Tarjeta de crédito</dDesTiPag>
+          <dMonTiPag>150000</dMonTiPag>
+          <cMoneTiPag>PYG</cMoneTiPag>
+          <dDMoneTiPag>Guarani</dDMoneTiPag>
+          <gPagTarCD>
+            <iDenTarj>1</iDenTarj>
+            <dDesDenTarj>Visa</dDesDenTarj>
+            <dRSProTar>Bancard</dRSProTar>
+            <dRUCProTar>6969549654</dRUCProTar>
+            <dDVProTar>1</dDVProTar>
+            <iForProPa>1</iForProPa>
+            <dCodAuOpe>232524234</dCodAuOpe>
+            <dNomTit>Marcos Jara</dNomTit>
+          </gPagTarCD>
+        </gPaConEIni>
+        <gPaConEIni>
+          <iTiPago>2</iTiPago>
+          <dDesTiPag>Cheque</dDesTiPag>
+          <dMonTiPag>150000</dMonTiPag>
+          <cMoneTiPag>PYG</cMoneTiPag>
+          <dDMoneTiPag>Guarani</dDMoneTiPag>
+          <gPagCheq>
+            <dNumCheq>32323232</dNumCheq>
+            <dBcoEmi>Sudameris</dBcoEmi>
+          </gPagCheq>
+        </gPaConEIni>
+      </gCamCond>
+      <gCamItem>
+        <dCodInt>A-001</dCodInt>
+        <dParAranc>4444</dParAranc>
+        <dNCM>ABCD1234</dNCM>
+        <dDesProSer>Producto o Servicio</dDesProSer>
+        <cUniMed>77</cUniMed>
+        <dDesUniMed>UNI</dDesUniMed>
+        <dCantProSer>10.5</dCantProSer>
+        <cPaisOrig>PRY</cPaisOrig>
+        <dDesPaisOrig>Paraguay</dDesPaisOrig>
+        <dInfItem>Información adicional o complementaria sobre el producto</dInfItem>
+        <gValorItem>
+          <dPUniProSer>10800</dPUniProSer>
+          <dTotBruOpeItem>113400</dTotBruOpeItem>
+          <gValorRestaItem>
+            <dDescItem>0</dDescItem>
+            <dDescGloItem>0</dDescGloItem>
+            <dAntPreUniIt>0</dAntPreUniIt>
+            <dTotOpeItem>113400</dTotOpeItem>
+          </gValorRestaItem>
+        </gValorItem>
+        <gCamIVA>
+          <iAfecIVA>1</iAfecIVA>
+          <dDesAfecIVA>Gravado IVA</dDesAfecIVA>
+          <dPropIVA>100</dPropIVA>
+          <dTasaIVA>5</dTasaIVA>
+          <dBasGravIVA>108000</dBasGravIVA>
+          <dLiqIVAItem>5400</dLiqIVAItem>
+        </gCamIVA>
+        <gRasMerc>
+          <dNumLote>A-001</dNumLote>
+          <dVencMerc>2022-10-30</dVencMerc>
+          <dNomImp>Importadora Parana S.A.</dNomImp>
+          <dDirImp>Importadora Parana S.A.</dDirImp>
+          <dNumFir>Importadora Parana S</dNumFir>
+          <dNumReg>Importadora Parana S</dNumReg>
+          <dNumRegEntCom>Importadora Parana S</dNumRegEntCom>
+        </gRasMerc>
+        <gVehNuevo>
+          <iTipOpVN>1</iTipOpVN>
+          <dDesTipOpVN>Venta a representante</dDesTipOpVN>
+          <dChasis>45252345235423532</dChasis>
+          <dColor>Rojo</dColor>
+          <dPotencia>1500</dPotencia>
+          <dCapMot>5</dCapMot>
+          <dPNet>8000</dPNet>
+          <dPBruto>10000</dPBruto>
+          <iTipCom>9</iTipCom>
+          <dDesTipCom>Otro</dDesTipCom>
+          <dNroMotor>323234234234234234</dNroMotor>
+          <dCapTracc>151.01</dCapTracc>
+          <dAnoFab>2009</dAnoFab>
+          <cTipVeh>Camioneta</cTipVeh>
+          <dCapac>5</dCapac>
+          <dCilin>3500</dCilin>
+        </gVehNuevo>
+      </gCamItem>
+      <gCamEsp>
+        <gGrupEner>
+          <dNroMed>132423424235425</dNroMed>
+          <dActiv>125</dActiv>
+          <dCateg>001</dCateg>
+          <dLecAnt>4</dLecAnt>
+          <dLecAct>5</dLecAct>
+          <dConKwh>1</dConKwh>
+        </gGrupEner>
+        <gGrupSeg>
+          <dCodEmpSeg/>
+          <gGrupPolSeg>
+            <dPoliza>AAAA</dPoliza>
+            <dUnidVig>año</dUnidVig>
+            <dVigencia>1</dVigencia>
+            <dNumPoliza>BBBB</dNumPoliza>
+            <dFecIniVig>2021-10-01</dFecIniVig>
+            <dFecFinVig>2022-10-01</dFecFinVig>
+            <dCodInt>A-001</dCodInt>
+          </gGrupPolSeg>
+        </gGrupSeg>
+        <gGrupSup>
+          <dNomCaj>Juan Antonio Caceres</dNomCaj>
+          <dEfectivo>150000</dEfectivo>
+          <dVuelto>30000</dVuelto>
+          <dDonac>1000</dDonac>
+          <dDesDonac>Donado para la carid</dDesDonac>
+        </gGrupSup>
+        <gGrupAdi>
+          <dCiclo>Mensualidad</dCiclo>
+          <dFecIniC>2021-09-01</dFecIniC>
+          <dFecFinC>2021-10-01</dFecFinC>
+          <dVencPag>2021-11-01</dVencPag>
+          <dContrato>AF-2541</dContrato>
+          <dSalAnt>1550000</dSalAnt>
+        </gGrupAdi>
+      </gCamEsp>
+      <gTransp>
+        <iTipTrans>1</iTipTrans>
+        <dDesTipTrans>Propio</dDesTipTrans>
+        <iModTrans>1</iModTrans>
+        <dDesModTrans>Terrestre</dDesModTrans>
+        <iRespFlete>1</iRespFlete>
+        <cCondNeg>CFR</cCondNeg>
+        <dNuManif>AF-2541</dNuManif>
+        <dIniTras>2021-11-01</dIniTras>
+        <dFinTras>2021-11-01</dFinTras>
+        <cPaisDest>PRY</cPaisDest>
+        <dDesPaisDest>Paraguay</dDesPaisDest>
+        <gCamSal>
+          <dDirLocSal>Paraguay</dDirLocSal>
+          <dNumCasSal>Paraguay</dNumCasSal>
+          <dComp1Sal>Entre calle 2</dComp1Sal>
+          <dComp2Sal>y Calle 7</dComp2Sal>
+          <cDepSal>11</cDepSal>
+          <dDesDepSal>ALTO PARANA</dDesDepSal>
+          <cDisSal>143</cDisSal>
+          <dDesDisSal>DOMINGO MARTINEZ DE IRALA</dDesDisSal>
+          <cCiuSal>3344</cCiuSal>
+          <dDesCiuSal>PASO ITA (INDIGENA)</dDesCiuSal>
+        </gCamSal>
+        <gCamEnt>
+          <dDirLocEnt>Paraguay</dDirLocEnt>
+          <dNumCasEnt>Paraguay</dNumCasEnt>
+          <dComp1Ent>Entre calle 2</dComp1Ent>
+          <dComp2Ent>y Calle 7</dComp2Ent>
+          <cDepEnt>11</cDepEnt>
+          <dDesDepEnt>ALTO PARANA</dDesDepEnt>
+          <cDisEnt>143</cDisEnt>
+          <dDesDisEnt>DOMINGO MARTINEZ DE IRALA</dDesDisEnt>
+          <cCiuEnt>3344</cCiuEnt>
+          <dDesCiuEnt>PASO ITA (INDIGENA)</dDesCiuEnt>
+        </gCamEnt>
+        <gVehTras>
+          <dTiVehTras>Terrestre</dTiVehTras>
+          <dMarVeh>Nissan</dMarVeh>
+          <dTipIdenVeh>1</dTipIdenVeh>
+          <dNroIDVeh>232323-1</dNroIDVeh>
+          <dNroMatVeh>1234567</dNroMatVeh>
+        </gVehTras>
+        <gCamTrans>
+          <iNatTrans>1</iNatTrans>
+          <dNomTrans>Paraguay</dNomTrans>
+          <dRucTrans>80068684</dRucTrans>
+          <dDVTrans>1</dDVTrans>
+          <cNacTrans>PRY</cNacTrans>
+          <dDesNacTrans>Paraguay</dDesNacTrans>
+          <dNomChof>Jose Benitez</dNomChof>
+          <dDomFisc>y Calle 7</dDomFisc>
+          <dDirChof>Jose Benitez</dDirChof>
+          <dNombAg>Jose Benitez</dNombAg>
+          <dRucAg>515415</dRucAg>
+          <dDVAg>1</dDVAg>
+          <dDirAge>Jose Benitez</dDirAge>
+        </gCamTrans>
+      </gTransp>
+    </gDtipDE>
+    <gTotSub>
+      <dSubExe>0</dSubExe>
+      <dSubExo>0</dSubExo>
+      <dSub5>113400</dSub5>
+      <dTotOpe>113400</dTotOpe>
+      <dTotDesc>0</dTotDesc>
+      <dTotDescGlotem>0</dTotDescGlotem>
+      <dTotAntItem>0</dTotAntItem>
+      <dTotAnt>0</dTotAnt>
+      <dPorcDescTotal>0</dPorcDescTotal>
+      <dDescTotal>0</dDescTotal>
+      <dAnticipo>0</dAnticipo>
+      <dRedon>0</dRedon>
+      <dTotGralOpe>113400</dTotGralOpe>
+      <dIVA5>5400</dIVA5>
+      <dIVA10>0</dIVA10>
+      <dLiqTotIVA5>0</dLiqTotIVA5>
+      <dLiqTotIVA10>0</dLiqTotIVA10>
+      <dTotIVA>5400</dTotIVA>
+      <dBaseGrav5>108000</dBaseGrav5>
+      <dTBasGraIVA>108000</dTBasGraIVA>
+    </gTotSub>
+    <gCamGen/>
+    <gCamDEAsoc>
+      <iTipDocAso>1</iTipDocAso>
+      <dDesTipDocAso>Electrónico</dDesTipDocAso>
+      <dCdCDERef>01800695631001001000000612021112917595714694</dCdCDERef>
+    </gCamDEAsoc>
+  </DE>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <Reference URI="#01800695631001001000000122020091410002983981">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+          <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+        <DigestValue>bjgVTGp+VItjqrPE8Aeg5vgWWL47ujHA8dddr0dM990=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>p93LWmVLzK0xHEyQkQRLdR1pj4ISz0kuM23kCbCKQCbm6dKXZxzB8z1IIlTBfd84yfwkv/VdtE99&#xD;&#xD;
+TfigGgnbVwSq+x720Yv+CbxaVsqrORPcHDCMqotQ8oSgrAva1n338vTUg4LCSjYQ+Kle/f+os+J7&#xD;&#xD;
+MlXwqeVD8T54UZFnNb+ZRIcKwX5TzGNUDSRIXsDQ6IqK2PEEBqkQMCz6eLFh7/cKwqImlatKZ+6l&#xD;&#xD;
+tQre3YnMkh7kgkMkpVeGVhN/Zj4MyZn8wAlBlMYRO/EGkJE4QMC5pTrtZAixX0SS6cmKQwbHt2YU&#xD;&#xD;
+5TAwMVM4w1tuN7Lbb0D604v+FlMhtsK8RIZG+A==</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>MIIIPjCCBiagAwIBAgITXAAAuXguC3+GBCAtIQAAAAC5eDANBgkqhkiG9w0BAQsFADBXMRcwFQYD&#xD;&#xD;
+VQQFEw5SVUMgODAwODA2MTAtNzEVMBMGA1UEChMMQ09ERTEwMCBTLkEuMQswCQYDVQQGEwJQWTEY&#xD;&#xD;
+MBYGA1UEAxMPQ0EtQ09ERTEwMCBTLkEuMB4XDTIyMDQyNjEyNTkxMFoXDTIzMDQyNjEyNTkxMFow&#xD;&#xD;
+gY8xGjAYBgNVBAMTEURJRUdPIExPUEVaIFNPTElTMRcwFQYDVQQKEw5QRVJTT05BIEZJU0lDQTEL&#xD;&#xD;
+MAkGA1UEBhMCUFkxDjAMBgNVBCoTBURJRUdPMRQwEgYDVQQEEwtMT1BFWiBTT0xJUzESMBAGA1UE&#xD;&#xD;
+BRMJQ0kzOTk3MDUzMREwDwYDVQQLEwhGSVJNQSBGMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xD;&#xD;
+AQoCggEBAMUrNRShaRTEIKjHi/bSDyHvg7kx3UflwtYv1HlJ+e505mK/L+OzucW/nkyu1Eaqpngz&#xD;&#xD;
+j9NgloUqPALX+cU959nClzNu26CdkhZC0uYXSVY+e0ou4/nmrjC/0bL45RVzbuCsfEFboycIFDlM&#xD;&#xD;
+auC9lYthWbqo43spX3MBzH7lVcbe9+pCQ5Axu+xPSnnnkX1s2us244nrbGzcdP0P5fyTiyjBncha&#xD;&#xD;
++ul+BOzkFsrt2hjPg0+whzAe17lVxAz6GzLf4bE+VUGudgNjJly3stQTrBcVbjyQitmuRlHtXJ/F&#xD;&#xD;
+gzDFxjEfWUWjpaVOjRbtqhFYgmc9Vqyl4OtqN6RI+Oh3S+kCAwEAAaOCA8gwggPEMA4GA1UdDwEB&#xD;&#xD;
+/wQEAwIF4DAMBgNVHRMBAf8EAjAAMCAGA1UdJQEB/wQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDAd&#xD;&#xD;
+BgNVHQ4EFgQU9i/dLp7oxUa7dfH7SRX85D/b+AMwHwYDVR0jBBgwFoAUJ/baOwt/k/hZEtAVqkLP&#xD;&#xD;
+spaWPUUwgYgGA1UdHwSBgDB+MHygeqB4hjpodHRwOi8vY2ExLmNvZGUxMDAuY29tLnB5L2Zpcm1h&#xD;&#xD;
+LWRpZ2l0YWwvY3JsL0NBLUNPREUxMDAuY3JshjpodHRwOi8vY2EyLmNvZGUxMDAuY29tLnB5L2Zp&#xD;&#xD;
+cm1hLWRpZ2l0YWwvY3JsL0NBLUNPREUxMDAuY3JsMIH4BggrBgEFBQcBAQSB6zCB6DBGBggrBgEF&#xD;&#xD;
+BQcwAoY6aHR0cDovL2NhMS5jb2RlMTAwLmNvbS5weS9maXJtYS1kaWdpdGFsL2Nlci9DQS1DT0RF&#xD;&#xD;
+MTAwLmNlcjBGBggrBgEFBQcwAoY6aHR0cDovL2NhMi5jb2RlMTAwLmNvbS5weS9maXJtYS1kaWdp&#xD;&#xD;
+dGFsL2Nlci9DQS1DT0RFMTAwLmNlcjAqBggrBgEFBQcwAYYeaHR0cDovL2NhMS5jb2RlMTAwLmNv&#xD;&#xD;
+bS5weS9vY3NwMCoGCCsGAQUFBzABhh5odHRwOi8vY2EyLmNvZGUxMDAuY29tLnB5L29jc3AwggFP&#xD;&#xD;
+BgNVHSAEggFGMIIBQjCCAT4GDCsGAQQBgtlKAQEBBjCCASwwbAYIKwYBBQUHAgEWYGh0dHA6Ly93&#xD;&#xD;
+d3cuY29kZTEwMC5jb20ucHkvZmlybWEtZGlnaXRhbC9DT0RFMTAwJTIwUG9saXRpY2ElMjBkZSUy&#xD;&#xD;
+MENlcnRpZmljYWNpb24lMjBGMSUyMHYxLjAucGRmADBmBggrBgEFBQcCAjBaHlgAUABvAGwAaQB0&#xD;&#xD;
+AGkAYwBhACAAZABlACAAYwBlAHIAdABpAGYAaQBjAGEAYwBpAG8AbgAgAEYAMQAgAGQAZQAgAEMA&#xD;&#xD;
+bwBkAGUAMQAwADAAIABTAC4AQQAuMFQGCCsGAQUFBwICMEgeRgBDAG8AZABlACAAMQAwADAAIABT&#xD;&#xD;
+AC4AQQAuACAAQwBlAHIAdABpAGYAaQBjAGEAdABlACAAUABvAGwAaQBjAHkAIABGADEwaQYDVR0R&#xD;&#xD;
+BGIwYIERRElFTE9TSUBHTUFJTC5DT02kSzBJMRQwEgYDVQQMEwtQUk9QSUVUQVJJTzEVMBMGA1UE&#xD;&#xD;
+BRMMUlVDMzk5NzA1My0xMRowGAYDVQQKExFESUVHTyBMT1BFWiBTT0xJUzANBgkqhkiG9w0BAQsF&#xD;&#xD;
+AAOCAgEAc0aTN1KNj5FPoKc28u+I2cgoNeNcOWJfBQWXLcNmlWOgBTNQScyVUJziQO7zuv2W2jaT&#xD;&#xD;
+q2EfOKLsPgp9mmXwarUKjVxdDlzH4RJnSY2uYrfaYMPJcyyAIYKkM7Nj9Ux/bj9/AWehYXIAehDR&#xD;&#xD;
+Q0kzspj74OV6rJwBHz4C33/7sQyd3HIHWecHx3GkydSHm8La+WMtxyiGPiYH+Dc7x8F1daFzdc2S&#xD;&#xD;
+QjOmcQbG4AmPfS9A8hLnxOoAS/wHgjd2cifxqcGm9rJnavTogN/CH8KchE2X0SqTMLZfIFdeANTq&#xD;&#xD;
+UF61CU12uhbafo0DQgWglaEh7uUcH4l+GXx9rBYwwzBHRIU+u8ZVMZ6vl/lGU1hrF51Fx9e4gj2X&#xD;&#xD;
+GhEDlFEIUiWZyksRRtDQl0MOJdpgfln++zRl18XerLRy2OI9iNjRUSXzddey6t52Om4PNRgpLPco&#xD;&#xD;
+3W7O+JrfATrEL705enQPhMEyTSR9+Okp/0Lz4EF3ZXLz4LaBrolNL1FcX+xiEV1W5PSUPJ72OM5i&#xD;&#xD;
+4tIt/R8ZxYSyYvQCV3SEbGeu5cok2ZKnbgwqI/8CXuudDb4bHzGZrWl+oezIAW343u8Smm7QcYuy&#xD;&#xD;
+q1ke2hmflm/WfnuPiqMUdri+FWeBZriaMngbthsGn9/nHxzqM7nuV9oWDXvUEbQbGcrqVm8ewwAm&#xD;&#xD;
+cND1ULc=</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+  <gCamFuFD>
+    <dCarQR>https://ekuatia.set.gov.py/consultas/qr?nVersion=150&amp;Id=01800695631001001000000122020091410002983981&amp;dFeEmiDE=323032302d30392d31345431303a31313a3030&amp;dRucRec=2005001&amp;dTotGralOpe=113400&amp;dTotIVA=5400&amp;cItems=1&amp;DigestValue=626a67565447702b5649746a717250453841656735766757574c3437756a4841386464647230644d3939303d&amp;IdCSC=undefined&amp;cHashQR=98de94a8e0f4743bf5a9aedf6c188f49136e7971de4d03d199f5205bf3563c8d</dCarQR>
+  </gCamFuFD>
+</rDE>
