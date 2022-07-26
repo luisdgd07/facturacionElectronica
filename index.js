@@ -308,6 +308,6 @@ app.post("./consultaruc", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.listen(1000, "172.26.15.8", () => {
+app.listen(3000, "172.26.15.8", () => {
   console.log("Servidor corriendo en puerto 80");
 });
