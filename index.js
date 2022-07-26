@@ -12,8 +12,10 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.post("/enviar", async (req, res) => {
+app.get("./", async (req, res) => {
+  res.send("Facturacion");
+});
+app.post("./enviar", async (req, res) => {
   try {
     let codigoSeguridad = Math.round(Math.random() * 999999);
     let item = JSON.parse(req.body.items);
@@ -287,7 +289,7 @@ app.post("/enviar", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.post("/consultaruc", async (req, res) => {
+app.post("./consultaruc", async (req, res) => {
   try {
     let response = "";
     setApi
@@ -306,6 +308,6 @@ app.post("/consultaruc", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.listen(80, () => {
+app.listen(1000, "35.172.70.62", () => {
   console.log("Servidor corriendo en puerto 80");
 });
