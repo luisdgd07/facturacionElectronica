@@ -56,7 +56,6 @@ app.post("/enviar", async (req, res) => {
         },
       };
     }
-    console.log(tipo);
     let data1 = {
       version: 150,
       fechaFirmaDigital: "2022-07-5T00:00:00",
@@ -160,7 +159,6 @@ app.post("/enviar", async (req, res) => {
     //   },
     //   items: items,
     // };
-    console.log(req.body.cambio);
     let data2 = {
       tipoDocumento: 1,
       establecimiento: "01",
@@ -268,8 +266,8 @@ app.post("/enviar", async (req, res) => {
                     console.log(response);
                   })
                   .catch((e) => {
-                    response = e;
-                    // console.log(e);
+                    response = "Ocurrio un error: ";
+                    console.log(e);
                   });
               });
           });
@@ -284,7 +282,7 @@ app.post("/enviar", async (req, res) => {
     let respon = response;
     res.send(respon);
   } catch (e) {
-    // console.log(e);
+    console.log(e);
 
     res.send("Ocurrio un error: ");
   }
@@ -308,9 +306,9 @@ app.post("/consultaruc", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.listen(3000, "172.26.15.8", () => {
-  console.log("Servidor corriendo en puerto 3000");
-});
-// app.listen(3000, "127.0.0.1", () => {
+// app.listen(3000, "172.26.15.8", () => {
 //   console.log("Servidor corriendo en puerto 3000");
 // });
+app.listen(3000, "127.0.0.1", () => {
+  console.log("Servidor corriendo en puerto 3000");
+});
