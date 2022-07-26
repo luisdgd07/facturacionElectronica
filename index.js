@@ -12,10 +12,10 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.get("./", async (req, res) => {
+app.get("/", async (req, res) => {
   res.send("Facturacion");
 });
-app.post("./enviar", async (req, res) => {
+app.post("/enviar", async (req, res) => {
   try {
     let codigoSeguridad = Math.round(Math.random() * 999999);
     let item = JSON.parse(req.body.items);
@@ -289,7 +289,7 @@ app.post("./enviar", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.post("./consultaruc", async (req, res) => {
+app.post("/consultaruc", async (req, res) => {
   try {
     let response = "";
     setApi
