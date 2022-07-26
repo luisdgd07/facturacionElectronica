@@ -264,12 +264,12 @@ app.post("/enviar", async (req, res) => {
                     "Die1905982022"
                   )
                   .then(async (xml) => {
-                    response = xml;
+                    response = JSON.stringify(xml);
                     console.log(response);
                   })
                   .catch((e) => {
                     response = e;
-                    console.log(e);
+                    // console.log(e);
                   });
               });
           });
@@ -284,7 +284,7 @@ app.post("/enviar", async (req, res) => {
     let respon = response;
     res.send(respon);
   } catch (e) {
-    console.log(e);
+    // console.log(e);
 
     res.send("Ocurrio un error: ");
   }
@@ -309,7 +309,7 @@ app.post("/consultaruc", async (req, res) => {
   }
 });
 app.listen(3000, "172.26.15.8", () => {
-  console.log("Servidor corriendo en puerto 80");
+  console.log("Servidor corriendo en puerto 3000");
 });
 // app.listen(3000, "127.0.0.1", () => {
 //   console.log("Servidor corriendo en puerto 3000");
