@@ -293,7 +293,7 @@ app.post("/consultaruc", async (req, res) => {
   try {
     let response = "";
     setApi
-      .consultaRUC("1", req.body.ruc, "test", "./3997053.pfx", "Die1905982022")
+      .consultaRUC("1", "3997053", "test", "./3997053.pfx", "Die1905982022")
       .then((xml) => {
         // response = JSON.stringify(xml);
         let logXml = JSON.stringify(xml);
