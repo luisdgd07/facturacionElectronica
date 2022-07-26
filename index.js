@@ -264,7 +264,7 @@ app.post("/enviar", async (req, res) => {
                     "Die1905982022"
                   )
                   .then(async (xml) => {
-                    response = JSON.stringify(xml);
+                    response = xml;
                     console.log(response);
                   })
                   .catch((e) => {
