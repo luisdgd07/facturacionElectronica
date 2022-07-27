@@ -245,9 +245,12 @@ app.post("/enviar", async (req, res) => {
     await xmlgen
       .generateXMLDE(data1, data2)
       .then(async (xml) => {
+        console.log("xml generado");
         await xmlsign
           .signXML(xml, "./3997053.pfx", "Die1905982022")
           .then(async (xmlFirmado) => {
+            console.log("xml firmado");
+
             await qrgen
               .generateQR(
                 xmlFirmado,
@@ -256,7 +259,9 @@ app.post("/enviar", async (req, res) => {
                 "test"
               )
               .then(async (xmlqr) => {
-                var xmlFormateado = xmlFirmado.replace(/(\r\n|\n|\r)/gm, "");
+                console.log("qr generado");
+
+                // var xmlFormateado = xmlFirmado.replace(/(\r\n|\n|\r)/gm, "");
 
                 // try {
                 //   const data = fs.writeFileSync(
@@ -272,7 +277,6 @@ app.post("/enviar", async (req, res) => {
                 // } catch (e) {
                 //   console.log(e);
                 // }
-                console.log("aaa");
                 await setApi
                   .recibe(
                     "100",
@@ -282,6 +286,7 @@ app.post("/enviar", async (req, res) => {
                     "Die1905982022"
                   )
                   .then(async (xml) => {
+                    console.log("enviando");
                     response = xml;
                     console.log(response);
                   })
