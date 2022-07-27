@@ -295,6 +295,9 @@ app.post("/enviar", async (req, res) => {
                     console.log(e);
                   });
               });
+          })
+          .catch((error) => {
+            console.log(error);
           });
       })
       .catch((error) => {
