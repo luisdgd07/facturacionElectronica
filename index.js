@@ -185,7 +185,7 @@ app.post("/enviar", async (req, res) => {
       establecimiento: "01",
       codigoSeguridadAleatorio: codigoSeguridad,
       punto: "002",
-      numero: 1117700,
+      numero: req.body.factura,
       descripcion: "",
       observacion: "",
       fecha: "2022-07-20T10:11:00",
@@ -259,9 +259,17 @@ app.post("/enviar", async (req, res) => {
               .then(async (xmlqr) => {
                 var xmlFormateado = xmlFirmado.replace(/(\r\n|\n|\r)/gm, "");
                 let nombreArchivo = "";
+                let Archivo = "";
                 try {
                   nombreArchivo =
                     "xmls/" +
+                    req.body.cliente +
+                    "-Fecha=" +
+                    req.body.fechaVenta +
+                    "-envio=" +
+                    ahora +
+                    ".xml";
+                  Archivo =
                     req.body.cliente +
                     "-Fecha=" +
                     req.body.fechaVenta +
@@ -282,7 +290,7 @@ app.post("/enviar", async (req, res) => {
                   )
                   .then(async (xml) => {
                     result = {
-                      file: nombreArchivo,
+                      file: Archivo,
                       response: xml,
                     };
                     console.log(JSON.stringify(xml));
@@ -334,6 +342,9 @@ app.post("/consultaruc", async (req, res) => {
 
     res.send("Ocurrio un error: ");
   }
+});
+app.get("/download/:file", function (req, res) {
+  res.download("xmls/" + req.params.file);
 });
 app.listen(3000, "172.26.15.8", () => {
   console.log("Servidor corriendo en puerto 3000");
