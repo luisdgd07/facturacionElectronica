@@ -18,45 +18,45 @@ app.get("/", async (req, res) => {
 app.post("/enviar", async (req, res) => {
   try {
     let codigoSeguridad = Math.round(Math.random() * 999999);
-    // let item = JSON.parse(req.body.items);
-    // let items = [];
-    // for (i = 0; i < item.length; i++) {
-    //   items.push(JSON.parse(item[i]));
-    // }
-    // let tipo = {};
-    // console.log(req.body.tipo);
-    // if (req.body.tipo == "Contado") {
-    //   tipo = {
-    //     tipo: 1,
-    //     entregas: [
-    //       {
-    //         tipo: 1,
-    //         monto: "150000",
-    //         moneda: req.body.moneda,
-    //         cambio: 0,
-    //       },
-    //     ],
-    //   };
-    // } else {
-    //   tipo = {
-    //     tipo: 2,
+    let item = JSON.parse(req.body.items);
+    let items = [];
+    for (i = 0; i < item.length; i++) {
+      items.push(JSON.parse(item[i]));
+    }
+    let tipo = {};
+    console.log(req.body.tipo);
+    if (req.body.tipo == "Contado") {
+      tipo = {
+        tipo: 1,
+        entregas: [
+          {
+            tipo: 1,
+            monto: req.body.total,
+            moneda: req.body.moneda,
+            cambio: 0,
+          },
+        ],
+      };
+    } else {
+      tipo = {
+        tipo: 2,
 
-    //     credito: {
-    //       tipo: 2,
-    //       plazo: "",
-    //       cuotas: 1,
-    //       montoEntrega: 0,
-    //       infoCuotas: [
-    //         {
-    //           moneda: req.body.moneda,
-    //           monto: req.body.total,
-    //           vencimiento: "2022-06-15",
-    //         },
-    //       ],
-    //     },
-    //   };
-    // }
-    // console.log(tipo);
+        credito: {
+          tipo: 2,
+          plazo: "",
+          cuotas: 1,
+          montoEntrega: 0,
+          infoCuotas: [
+            {
+              moneda: req.body.moneda,
+              monto: req.body.total,
+              vencimiento: "2022-06-15",
+            },
+          ],
+        },
+      };
+    }
+    console.log(tipo);
     let data1 = {
       version: 150,
       fechaFirmaDigital: "2022-07-5T00:00:00",
@@ -95,139 +95,140 @@ app.post("/enviar", async (req, res) => {
       ],
     };
 
-    let data2 = {
-      tipoDocumento: 1,
-      establecimiento: 1,
-      codigoSeguridadAleatorio: "298398",
-      punto: "002",
-      numero: 103300,
-      descripcion: "",
-      observacion: "",
-      fecha: "2022-06-30T10:11:00",
-      tipoEmision: 1,
-      tipoTransaccion: 1,
-      tipoImpuesto: 1,
-      moneda: "USD",
-      condicionTipoCambio: 1,
-      cambio: "6852.00",
-      cliente: {
-        contribuyente: true,
-        ruc: "80007801-2",
-        razonSocial: "",
-        tipoOperacion: 1,
-        direccion: "",
-        numeroCasa: "0",
-        departamento: 11,
-        departamentoDescripcion: "ALTO PARANA",
-        distrito: 211,
-        distritoDescripcion: "LOS CEDRALES",
-        ciudad: 5695,
-        ciudadDescripcion: "LOS CEDRALES",
-        pais: "PRY",
-        paisDescripcion: "PARAGUAY",
-        tipoContribuyente: 2,
-        documentoTipo: 1,
-        documentoNumero: "",
-        telefono: "",
-        celular: "",
-        email: "",
-        codigo: 712,
-      },
-      // usuario: {
-      //   documentoTipo: 1,
-      //   documentoNumero: "4578155-9",
-      //   nombre: "MIRIA RODRIGUEZ",
-      //   cargo: "ADMINISTRADOR",
-      // },
-      factura: {
-        presencia: 4,
-      },
-      condicion: {
-        tipo: 2,
-        credito: {
-          tipo: 2,
-          plazo: "20",
-          cuotas: 1,
-          montoEntrega: 0,
-          infoCuotas: [
-            {
-              moneda: "USD",
-              monto: "23401.18",
-              vencimiento: "2022-06-15",
-            },
-          ],
-        },
-      },
-      items: [
-        {
-          codigo: "9123",
-          descripcion: "SOJA EN GRANOS - TONELADAS",
-          observacion: "",
-          unidadMedida: 99,
-          cantidad: "37.194",
-          precioUnitario: "629.1654",
-          cambio: "6852.00",
-          ivaTipo: 4,
-          ivaBase: 50,
-          iva: 5,
-          lote: null,
-          vencimiento: null,
-          numeroSerie: "",
-          numeroPedido: "",
-          numeroSeguimiento: "",
-        },
-      ],
-    };
-    // console.log(req.body.cambio);
     // let data2 = {
     //   tipoDocumento: 1,
-    //   establecimiento: "01",
-    //   codigoSeguridadAleatorio: codigoSeguridad,
+    //   establecimiento: 1,
+    //   codigoSeguridadAleatorio: "298398",
     //   punto: "002",
-    //   numero: 1017700,
+    //   numero: 103300,
     //   descripcion: "",
     //   observacion: "",
     //   fecha: "2022-06-30T10:11:00",
     //   tipoEmision: 1,
     //   tipoTransaccion: 1,
     //   tipoImpuesto: 1,
-    //   moneda: req.body.moneda,
+    //   moneda: "USD",
     //   condicionTipoCambio: 1,
-    //   cambio: req.body.cambio,
+    //   cambio: "6852.00",
     //   cliente: {
     //     contribuyente: true,
     //     ruc: "80007801-2",
-    //     razonSocial: req.body.cliente,
-    //     nombreFantasia: "",
+    //     razonSocial: "",
     //     tipoOperacion: 1,
-    //     direccion: req.body.dirCliente,
+    //     direccion: "",
     //     numeroCasa: "0",
     //     departamento: 11,
-    //     departamentoDescripcion: "",
+    //     departamentoDescripcion: "ALTO PARANA",
     //     distrito: 211,
-    //     distritoDescripcion: "",
+    //     distritoDescripcion: "LOS CEDRALES",
     //     ciudad: 5695,
-    //     ciudadDescripcion: "",
+    //     ciudadDescripcion: "LOS CEDRALES",
     //     pais: "PRY",
-    //     paisDescripcion: "Paraguay",
+    //     paisDescripcion: "PARAGUAY",
     //     tipoContribuyente: 2,
     //     documentoTipo: 1,
     //     documentoNumero: "",
-    //     telefono: "1234567",
+    //     telefono: "",
     //     celular: "",
     //     email: "",
     //     codigo: 712,
     //   },
-
+    //   // usuario: {
+    //   //   documentoTipo: 1,
+    //   //   documentoNumero: "4578155-9",
+    //   //   nombre: "MIRIA RODRIGUEZ",
+    //   //   cargo: "ADMINISTRADOR",
+    //   // },
     //   factura: {
-    //     presencia: 1,
+    //     presencia: 4,
     //   },
-    //   condicion: tipo,
-    //   items: items,
+    //   condicion: {
+    //     tipo: 2,
+    //     credito: {
+    //       tipo: 2,
+    //       plazo: "20",
+    //       cuotas: 1,
+    //       montoEntrega: 0,
+    //       infoCuotas: [
+    //         {
+    //           moneda: "USD",
+    //           monto: "23401.18",
+    //           vencimiento: "2022-06-15",
+    //         },
+    //       ],
+    //     },
+    //   },
+    //   items: [
+    //     {
+    //       codigo: "9123",
+    //       descripcion: "SOJA EN GRANOS - TONELADAS",
+    //       observacion: "",
+    //       unidadMedida: 99,
+    //       cantidad: "37.194",
+    //       precioUnitario: "629.1654",
+    //       cambio: "6852.00",
+    //       ivaTipo: 4,
+    //       ivaBase: 50,
+    //       iva: 5,
+    //       lote: null,
+    //       vencimiento: null,
+    //       numeroSerie: "",
+    //       numeroPedido: "",
+    //       numeroSeguimiento: "",
+    //     },
+    //   ],
     // };
 
-    // console.log(data2);
+    console.log(req.body.cambio);
+    let data2 = {
+      tipoDocumento: 1,
+      establecimiento: "01",
+      codigoSeguridadAleatorio: codigoSeguridad,
+      punto: "002",
+      numero: 1017700,
+      descripcion: "",
+      observacion: "",
+      fecha: "2022-06-30T10:11:00",
+      tipoEmision: 1,
+      tipoTransaccion: 1,
+      tipoImpuesto: 1,
+      moneda: req.body.moneda,
+      condicionTipoCambio: 1,
+      cambio: req.body.cambio,
+      cliente: {
+        contribuyente: true,
+        ruc: "80007801-2",
+        razonSocial: req.body.cliente,
+        nombreFantasia: req.body.cliente,
+        tipoOperacion: 1,
+        direccion: req.body.dirCliente,
+        numeroCasa: "0",
+        departamento: req.body.departamentoCliente,
+        departamentoDescripcion: "",
+        distrito: "aaa",
+        distritoDescripcion: "",
+        ciudad: "",
+        ciudadDescripcion: "",
+        pais: "PRY",
+        paisDescripcion: "Paraguay",
+        tipoContribuyente: 2,
+        documentoTipo: 1,
+        documentoNumero: "",
+        telefono: "1234567",
+        celular: "",
+        email: "",
+        codigo: 712,
+      },
 
+      factura: {
+        presencia: 1,
+      },
+      condicion: tipo,
+      items: items,
+    };
+
+    // console.log(data2);
+    let result = {};
     let response = "";
     let hoy = new Date();
     let ahora =
@@ -257,38 +258,39 @@ app.post("/enviar", async (req, res) => {
               )
               .then(async (xmlqr) => {
                 var xmlFormateado = xmlFirmado.replace(/(\r\n|\n|\r)/gm, "");
-
+                let nombreArchivo = "";
                 // try {
-                //   const data = fs.writeFileSync(
+                //   nombreArchivo =
                 //     "xmls/" +
-                //       req.body.cliente +
-                //       "-Fecha=" +
-                //       req.body.fechaVenta +
-                //       "-envio=" +
-                //       ahora +
-                //       ".xml",
-                //     xmlFormateado
-                //   );
+                //     req.body.cliente +
+                //     "-Fecha=" +
+                //     req.body.fechaVenta +
+                //     "-envio=" +
+                //     ahora +
+                //     ".xml";
+                //   const data = fs.writeFileSync(nombreArchivo, xmlFormateado);
                 // } catch (e) {
                 //   console.log(e);
                 // }
-                console.log("aaa");
-                await setApi
-                  .recibe(
-                    "100",
-                    xmlqr,
-                    "test",
-                    "./3997053.pfx",
-                    "Die1905982022"
-                  )
-                  .then(async (xml) => {
-                    response = xml;
-                    console.log(response);
-                  })
-                  .catch((e) => {
-                    response = e;
-                    console.log(e);
-                  });
+                console.log(xmlqr);
+                // await setApi
+                //   .recibe(
+                //     "100",
+                //     xmlqr,
+                //     "test",
+                //     "./3997053.pfx",
+                //     "Die1905982022"
+                //   )
+                //   .then(async (xml) => {
+                //     result = {
+                //       file: nombreArchivo,
+                //       response: xml,
+                //     };
+                //   })
+                //   .catch((e) => {
+                //     response = e;
+                //     console.log(e);
+                //   });
               });
           });
       })
@@ -299,8 +301,7 @@ app.post("/enviar", async (req, res) => {
 
     console.log("------------------------------");
     console.log("------------------------------");
-    let respon = response;
-    res.send(respon);
+    res.send(result);
   } catch (e) {
     console.log(e);
 
@@ -334,9 +335,9 @@ app.post("/consultaruc", async (req, res) => {
     res.send("Ocurrio un error: ");
   }
 });
-app.listen(3000, "172.26.15.8", () => {
-  console.log("Servidor corriendo en puerto 3000");
-});
-// app.listen(3000, "127.0.0.1", () => {
+// app.listen(3000, "172.26.15.8", () => {
 //   console.log("Servidor corriendo en puerto 3000");
 // });
+app.listen(3000, "127.0.0.1", () => {
+  console.log("Servidor corriendo en puerto 3000");
+});
