@@ -272,7 +272,6 @@ app.post("/enviar", async (req, res) => {
                 // } catch (e) {
                 //   console.log(e);
                 // }
-                console.log(xmlqr);
                 await setApi
                   .recibe(
                     "100",
