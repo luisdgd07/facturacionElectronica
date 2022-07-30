@@ -259,19 +259,19 @@ app.post("/enviar", async (req, res) => {
               .then(async (xmlqr) => {
                 var xmlFormateado = xmlFirmado.replace(/(\r\n|\n|\r)/gm, "");
                 let nombreArchivo = "";
-                // try {
-                //   nombreArchivo =
-                //     "xmls/" +
-                //     req.body.cliente +
-                //     "-Fecha=" +
-                //     req.body.fechaVenta +
-                //     "-envio=" +
-                //     ahora +
-                //     ".xml";
-                //   const data = fs.writeFileSync(nombreArchivo, xmlFormateado);
-                // } catch (e) {
-                //   console.log(e);
-                // }
+                try {
+                  nombreArchivo =
+                    "xmls/" +
+                    req.body.cliente +
+                    "-Fecha=" +
+                    req.body.fechaVenta +
+                    "-envio=" +
+                    ahora +
+                    ".xml";
+                  const data = fs.writeFileSync(nombreArchivo, xmlFormateado);
+                } catch (e) {
+                  console.log(e);
+                }
                 await setApi
                   .recibe(
                     "100",
@@ -285,6 +285,7 @@ app.post("/enviar", async (req, res) => {
                       file: nombreArchivo,
                       response: xml,
                     };
+                    console.log(xml);
                   })
                   .catch((e) => {
                     response = e;
