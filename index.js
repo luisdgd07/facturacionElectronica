@@ -247,7 +247,7 @@ app.post("/enviar", async (req, res) => {
       .generateXMLDE(data1, data2)
       .then(async (xml) => {
         await xmlsign
-          .signXML(xml, "facturacionElectronica/3997053.pfx", "Die1905982022")
+          .signXML(xml, "3997053.pfx", "Die1905982022")
           .then(async (xmlFirmado) => {
             await qrgen
               .generateQR(
