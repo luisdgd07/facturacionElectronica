@@ -344,7 +344,7 @@ app.post("/consultaruc", async (req, res) => {
   }
 });
 app.get("/download/:file", function (req, res) {
-  res.download("xmls/" + req.params.file);
+  res.download("facturacionElectronica/xmls/" + req.params.file);
 });
 app.listen(3000, "172.26.15.8", () => {
   console.log("Servidor corriendo en puerto 3000");
